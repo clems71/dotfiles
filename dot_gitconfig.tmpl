@@ -1,0 +1,5 @@
+[user]
+    name = "{{ (bitwarden "item" "Main").identity.firstName }} {{ (bitwarden "item" "Main").identity.lastName }}"
+    email = {{ (bitwarden "item" "Main").identity.email }}
+[alias]
+    tree = log --oneline --graph --decorate --all --color
