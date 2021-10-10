@@ -118,6 +118,9 @@ fi
 
 # Env
 export EDITOR=nano
+export PATH=$HOME/bin:$PATH
 
 # Aliases
 alias bwunlock='export BW_SESSION="$(bw unlock --raw)"'
+alias gpu-use-nvidia='export __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia'
+alias gpu-use-intel='export __NV_PRIME_RENDER_OFFLOAD=0 __GLX_VENDOR_LIBRARY_NAME='
