@@ -1,0 +1,6 @@
+#!/bin/sh
+{{ if eq .chezmoi.os "linux" -}}
+sudo apt update
+sudo apt install -y npm
+sudo npm i -g @bitwarden/cli
+{{ end -}}
