@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Direnv
+eval "$(direnv hook bash)"
+
 # Env
 export EDITOR=nano
 export PATH=$HOME/bin:$PATH
