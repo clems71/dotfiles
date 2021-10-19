@@ -122,6 +122,7 @@ export PATH=$HOME/bin:$PATH
 
 # Aliases
 alias bwunlock='export BW_SESSION="$(bw unlock --raw)"'
+alias artifactory=$'export ARTIFACTORY_ACCESS_TOKEN=$(bw get item "artifactory.corp.adobe.com" | jq \'.fields[] | select(.name == "accessToken") | .value\' -r)'
 alias gpu-use-nvidia='export __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia'
 alias gpu-use-intel='export __NV_PRIME_RENDER_OFFLOAD=0 __GLX_VENDOR_LIBRARY_NAME='
 
