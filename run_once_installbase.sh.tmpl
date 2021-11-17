@@ -6,5 +6,5 @@ sudo apt install -y npm direnv
 sudo npm i -g @bitwarden/cli
 {{ end -}}
 {{ if eq .chezmoi.os "darwin" -}}
-brew install bitwarden-cli
+brew install bitwarden-cli jq
 {{ end -}}
